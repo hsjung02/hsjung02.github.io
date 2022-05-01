@@ -1,0 +1,27 @@
+- title: Mechanics #Menu item title.
+  url: category/Mechanics.html #Menu item url.
+  icon: assets/img/icons/mechanics.svg #Menu item icon.
+  hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
+  subnav: #Subnav. See note [2].
+      - title: Fluid Mechanics #Submenu item title.
+        url: category/Fluid Mechanics.html #Submenu item url.
+        hue: "var(--c-themeHueOrange)" #Submenu item hue.
+      - title: Mechanical Vibration #Submenu item title.
+        url: category/Mechanical Vibration.html #Submenu item url.
+        hue: "var(--c-themeHueOrange)" #Submenu item hue.
+- title: Electronics
+  url: category/Electronics.html
+  icon: assets/img/icons/electronics.svg
+  hue: "var(--c-themeHueOrange)"
+  subnav: #Subnav. See note [2].
+      - title: Microcircuits #Submenu item title.
+        url: category/Microcircuits.html #Submenu item url.
+        hue: "var(--c-themeHueOrange)" #Submenu item hue.
+- title: Computer Science
+  url: category/Computer Science.html
+  icon: assets/img/icons/computer.svg
+  hue: "var(--c-themeHueGreen)"
+  subnav: #Subnav. See note [2].
+      - title: Problem Solving #Submenu item title.
+        url: category/Problem Solving.html #Submenu item url.
+        hue: "var(--c-themeHueOrange)" #Submenu item hue.
