@@ -4,8 +4,8 @@ category: [ME,Mechanical Vibration] #One, more categories or no at all.
 title:  "Oscillation with Viscous Damping"
 date:   2021-06-17 10:05:42 +0200
 author: hsjung02 #Author's nick.
-#nextPart: _posts/2021-06-18-Navier-Stokes-Equation.md #Next part.
-#prevPart: _posts/2021-06-16-Reynolds-transport-theorem.md #Previous part.
+##nextPart: _posts/2021-06-18-Navier-Stokes-Equation.md #Next part.
+##prevPart: _posts/2021-06-16-Reynolds-transport-theorem.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Jekyll example post." #Open Graph description.
 fb_app_id: example

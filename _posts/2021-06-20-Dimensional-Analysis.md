@@ -4,8 +4,8 @@ category: [ME,Fluid Mechanics] #One, more categories or no at all.
 title:  "Dimensional Analysis"
 date:   2021-06-20 10:05:42 +0200
 author: hsjung02 #Author's nick.
-#nextPart: _posts/2021-06-19-syntax-example.md #Next part.
-prevPart: _posts/2021-06-19-Stream-function-and-Velocity-potential.md #Previous part.
+##nextPart: _posts/2021-06-19-syntax-example.md #Next part.
+#prevPart: _posts/2021-06-19-Stream-function-and-Velocity-potential.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Jekyll example post." #Open Graph description.
 fb_app_id: example

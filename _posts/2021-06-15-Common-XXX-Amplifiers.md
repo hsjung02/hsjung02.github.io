@@ -4,8 +4,8 @@ category: [EE,Microcircuits] #One, more categories or no at all.
 title:  "Common XXX Amplifiers"
 date:   2021-06-15 10:05:42 +0200
 author: hsjung02 #Author's nick.
-nextPart: _posts/2021-06-30-OpAMP.md #Next part.
-prevPart: _posts/2021-06-14-MOSFET.md #Previous part.
+#nextPart: _posts/2021-06-30-OpAMP.md #Next part.
+#prevPart: _posts/2021-06-14-MOSFET.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Various picture examples." #Open Graph description.
 fb_app_id: example

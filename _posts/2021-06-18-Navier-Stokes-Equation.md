@@ -4,8 +4,8 @@ category: [ME,Fluid Mechanics] #One, more categories or no at all.
 title:  "Navier-Stokes Equation"
 date:   2021-06-18 10:05:42 +0200
 author: hsjung02 #Author's nick.
-nextPart: _posts/2021-06-19-Stream-function-and-Velocity-potential.md #Next part.
-prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
+#nextPart: _posts/2021-06-19-Stream-function-and-Velocity-potential.md #Next part.
+#prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Jekyll example post." #Open Graph description.
 fb_app_id: example
