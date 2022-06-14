@@ -34,8 +34,18 @@ incremental: false
 #theme: jekyll-theme-simplex
 remote-theme: hsjung02/hsjung02.github.io
 
+relative_links:
+  enabled:     true
+  collections: false
+  exclude:
+    - directory
+    - file.md
+
+
+
 plugins:
   - jekyll-feed
+  - jekyll-relative-links
 
 # Exclude from processing.
 # The following items will not be processed, by default.

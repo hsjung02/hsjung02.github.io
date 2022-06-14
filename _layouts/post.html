@@ -40,9 +40,9 @@ layout: default
                 {% endif %}
             >
                 {% if page.prevPart != nil %}
-                    <a href="{%link_relative {{ page.prevPart }} %}">
+                    <a href="{%link {{ page.prevPart }} %}">
                         <img  class="arrow-left" src="{{ site.url }}/assets/img/icons/arrow_left.svg"/>
-                        {{ site.baseurl }}
+                        {{ page.prevPart }}
                     </a>
                 {% endif %}
                 {% if page.nextPart != nil %}
