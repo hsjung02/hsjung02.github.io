@@ -46,7 +46,7 @@ layout: default
                     </a>
                 {% endif %}
                 {% if page.nextPart != nil %}
-                    <a href="{% link {{ site.baseurl }}{{ page.nextPart }} %}">
+                    <a href="{{ site.baseurl }}{% link {{ page.nextPart }} %}">
                         Next
                         <img class="arrow-right" src="{{ site.url }}/assets/img/icons/arrow_right.svg"/>
                     </a>
