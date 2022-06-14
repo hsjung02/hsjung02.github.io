@@ -5,7 +5,7 @@ title:  "Reynolds Transport Theorem"
 date:   2021-06-16 10:05:42 +0200
 author: hsjung02 #Author's nick.
 nextPart: _posts/2021-06-17-Bernoulli-Equation.md #Next part.
-#prevPart: _posts/2021-01-30-example.md #Previous part.
+prevPart: _posts/2021-01-30-example.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Jekyll example post." #Open Graph description.
 fb_app_id: example
