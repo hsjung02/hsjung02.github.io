@@ -26,6 +26,6 @@
         url: category/Algorithm.html #Submenu item url.
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
 - title: About
-  url: assets/cv.pdf
+  url: cv.html
   icon: assets/img/icons/about.svg
   hue: "var(--c-themeHueBlue)"
