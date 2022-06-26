@@ -21,15 +21,18 @@
 title: Welcome to hsjung02's blog
 email: hsjung02@postech.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Ocean of Knowledge
+  Knowledge is Love and Light and Vision -Helen Keller
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "assets/favicon.ico"
+favicon: "/assets/favicon.ico"
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+default_lang: "ko" # 컨텐츠의 기본 언어
+exclude_from_localization: ["image"] # 루트 레벨 폴더 중 다국어 기능 제외 시킬 폴더
+parallel_localizaion: false # 윈도우에서는 버그가 있어서 false로 해야 동작한다고 합니다
 # Build settings
 #theme: jekyll-theme-simplex
 remote-theme: hsjung02/hsjung02.github.io

@@ -9,6 +9,7 @@ author: hsjung02 #Author's nick.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "Various picture examples." #Open Graph description.
 fb_app_id: example
+use_math: true
 ---
 
 The simplex supports not only embedding pictures but also includes a lightbox plugin. Read the post and check out various examples.

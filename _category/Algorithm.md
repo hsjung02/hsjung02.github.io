@@ -1,6 +1,6 @@
 ---
-category: [Problem Solving] #Category ID.
+category: [Algorithm] #Category ID.
 hue: var(--c-themeHueOrange) #Category hue. See note [1].
-title: Problem Solving #Category title.
+title: Algorithm #Category title.
 description: "Empty category example."
 ---

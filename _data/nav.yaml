@@ -22,6 +22,10 @@
   icon: assets/img/icons/computer.svg
   hue: "var(--c-themeHueGreen)"
   subnav: #Subnav. See note [2].
-      - title: Problem Solving #Submenu item title.
-        url: category/Problem Solving.html #Submenu item url.
+      - title: Algorithm #Submenu item title.
+        url: category/Algorithm.html #Submenu item url.
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
+- title: About
+  url: assets/cv.pdf
+  icon: assets/img/icons/about.svg
+  hue: "var(--c-themeHueBlue)"
