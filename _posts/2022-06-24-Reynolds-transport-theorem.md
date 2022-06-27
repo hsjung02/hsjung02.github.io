@@ -12,7 +12,7 @@ fb_app_id: example
 use_math: true
 ---
 
-유체역학에서 주로 사용하는 몇 가지 지배방정식은 Reynolds Transport Theorem을 통해 요약할 수 있다.
+유체역학에서 주로 사용하는 지배방정식들은 Reynolds Transport Theorem을 통해 요약할 수 있다.
 
 Reynolds Transport Theorem의 key concept은 System 관점과 Control Volume 관점에서의 분석을 연관짓는 것이다.
 
