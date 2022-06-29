@@ -7,7 +7,7 @@ author: hsjung02 #Author's nick.
 #nextPart: _posts/2021-06-17-Bernoulli-Equation.md #Next part.
 #prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
-og_description: "Jekyll example post." #Open Graph description.
+og_description: "유체역학에서 주로 사용하는 지배방정식들은 Reynolds Transport Theorem을 통해 요약할 수 있다." #Open Graph description.
 fb_app_id: example
 use_math: true
 ---

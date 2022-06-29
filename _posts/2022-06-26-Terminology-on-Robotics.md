@@ -7,6 +7,8 @@ author: hsjung02 #Author's nick.
 #nextPart: _posts/2021-06-17-Bernoulli-Equation.md #Next part.
 #prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
+og_description: "로보틱스 분야에서 중요한 용어들과 개념들을 정리한 포스팅이다."
+
 use_math: true
 ---
 
