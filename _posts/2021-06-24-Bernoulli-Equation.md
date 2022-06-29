@@ -55,6 +55,8 @@ $\displaystyle p + \rho \int \frac{V^2}{R}dn + \gamma z =$ constant across strea
 
 셋째, Hydrostatic pressure $\gamma z$이다. 유체의 무게에 의해 중력가속도 방향으로 발생하는 압력이다. Pressure eqn. $-\nabla p - \gamma \hat{\mathbf{k}}=\rho \mathbf{a}$에 hydrostatic condition(a=0)을 대입해 얻어지는 그 hydrostatic pressure이다.
 
+베르누이 방정식을 일-에너지 정리로 해석할 수 있다. $p$는 압력이 유체에 한 일, $\gamma z$는 중력이 유체에 한 일, $\frac{1}{2}\rho V^2$는 유체의 운동 에너지이다. 이들의 합이 일정하다는 것이 일-에너지 정리의 핵심이자 베르누이 방정식에서 알 수 있는 사실이다.
+
 베르누이 방정식의 양변을 비중 $\gamma$로 나누면 head form을 얻을 수 있다.
 
 $\displaystyle \frac{p}{\gamma}+\frac{V^2}{2g}+z=$ constant along streamline
@@ -64,3 +66,8 @@ $\displaystyle \frac{p}{\gamma}+\frac{V^2}{2g}+z=$ constant along streamline
 Pressure head를 통해 flow가 나타내는 압력을, Velocity head를 통해 flow의 유속을, Potential head를 통해 flow의 고도 변화를 알 수 있다.
 
 Restrictions
+
+Applications
+- Pitot-static tube
+- Flowmeter (combined with continuity equation)
+- Problem solving :D
