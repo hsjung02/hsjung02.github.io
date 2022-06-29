@@ -24,7 +24,7 @@ $\displaystyle \frac{DB_{sys}}{Dt}=\frac{\partial}{\partial t}\int_{\text{CV}}\r
 
 여기서 $\frac{D}{Dt}$ notation은 Material Derivative를 의미한다. Material Derivative는 $\frac{D}{Dt}=\frac{\partial}{\partial t}+\mathbf{V \cdot \nabla}$로 정의되는 연산자이다. 앞의 항을 local derivative, 뒤의 항을 convective derivative라고 한다.
 
-RTT에서 $b$가 될 수 있는 양으로는 $b=1,\, b=\mathbf{V}, \,b=\mathbf{V^{2}/2},\, b=r \times v$가 있으며 각 $b$에 해당하는 $B$는 $B=m \,(질량), \, B=mV \,(운동량), \, B=mV^{2}/2\,(운동에너지),\,B=mr \times v\,(각운동량)$이다.
+RTT에서 $b$가 될 수 있는 양으로는 $b=1$, $b=\mathbf{V}$, $b=\mathbf{V^{2}/2}$, $b=r \times v$가 있으며 각 $b$에 해당하는 $B$는 $B=m \, (질량)$, $B=mV \,(운동량)$, $B=mV^{2}/2\,(운동에너지)$, $B=mr \times v\,(각운동량)$이다.
 
 $b=1$일 때 질량 보존, $b=\mathbf{V}$일 때 운동량 보존, $b=\mathbf{V^{2}/2}$일 때 운동에너지 보존 식을 얻을 수 있다. 
 
@@ -125,7 +125,7 @@ RTT로부터 유도되는 여러 공식을 사용할 때는 주어진 조건을 
 
 그림에서 보는 것처럼 주사기의 피스톤을 밀면 수액이 바늘을 통해 방출되고, 유격 때문인지 뒤로도 조금 샌다고 한다. 이때 새는 양은 바늘로 나가는 양의 1/10배이다. 피스톤을 빠르게 밀면 같은 시간 동안 수액이 더 많이 방출되고, 느리게 밀면 적게 방출될 것이라는 것을 직관적으로 알 수 있다. 그렇다면 원하는 속도로 수액을 주입하기 위해서는 피스톤을 얼마의 속력으로 밀어야 할까?
 
-
+![deformingCV](/assets/img/posts/Reynolds-Transport-Theorem/deformingCV.png)
 
 <details>
 <summary>풀이</summary>
@@ -154,7 +154,7 @@ $\int_{\text{CS}}\rho \, \mathrm{\mathbf{V \cdot \hat{n}}} \, d A$는 Control Su
 
 드넓은 평원에서 농사를 지을 때 작물에 물을 공급하기 위해 스프링클러를 사용하는데, 균일한 급수를 위해 그림과 같은 스프링클러를 회전할 수 있게 설치하였다.
 
-
+![movingCV](/assets/img/posts/Reynolds-Transport-Theorem/movingCV.png)
 
 스프링클러의 회전축에 저항토크가 얼마나 발생하느냐에 따라 스프링클러는 다른 운동 양상을 보인다.
 
