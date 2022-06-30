@@ -20,7 +20,7 @@ Reynolds Transport Theorem의 key concept은 System 관점과 Control Volume 관
 먼저, Reynolds Transport Theorem을 살펴보면 다음과 같다.
 
 $B=mb$가 성립하는 크기 성질 $B$와 세기 성질 $b$에 대해
-$\frac{DB_{sys}}{Dt}=\frac{\partial}{\partial t}\int_{\text{CV}}\rho b \, d\bar{V}\, + \,\int_{\text{CS}}\rho b \, \mathrm{\mathbf{V \cdot \hat{n}}} \, d A$가 성립한다.
+$\displaystyle \frac{DB_{sys}}{Dt}=$ $\displaystyle \frac{\partial}{\partial t}\int_{\text{CV}}\rho b \, d\bar{V}\, + \,\int_{\text{CS}}\rho b \, \mathrm{\mathbf{V \cdot \hat{n}}} \, d A$가 성립한다.
 
 여기서 $\frac{D}{Dt}$ notation은 Material Derivative를 의미한다. Material Derivative는 $\frac{D}{Dt}=\frac{\partial}{\partial t}+\mathbf{V \cdot \nabla}$로 정의되는 연산자이다. 앞의 항을 local derivative, 뒤의 항을 convective derivative라고 한다.
 
