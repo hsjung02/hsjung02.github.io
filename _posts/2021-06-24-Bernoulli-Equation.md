@@ -151,6 +151,6 @@ Pressure head를 통해 flow가 나타내는 압력을, Velocity head를 통해 
 
 베르누이 방정식은 추가 조건을 활용하면 쓰임새가 더 커진다.
 
-예를 들어, irrotational flow에서는 Bernoulli constant가 모든 유선에 대해 동일하기 때문에 flow의 모든 지점에서(굳이 같은 유선상에 있지 않더라도) 베르누이 방정식을 적용할 수 있다.
+예를 들어, irrotational flow에서는 Bernoulli constant가 모든 유선에 대해 동일하기 때문에 flow의 모든 지점에서(굳이 같은 유선상에 있지 않더라도) 베르누이 방정식을 적용할 수 있다. 참고로 irrotational flow란 vorticity $\zeta = 2\omega = \nabla \times V =0$인 flow를 뜻한다.
 
 연속방정식 등을 활용하여 속도 조건을 모두 구한 상태에서는 압력을 쉽게 구할 수 있고, 대기와 접해 있어 대기압 조건을 활용할 수 있다면 각 지점에서의 유속을 쉽게 구할 수 있다.
