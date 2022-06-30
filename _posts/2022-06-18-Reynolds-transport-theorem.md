@@ -2,9 +2,9 @@
 layout: post #Do not change.
 category: [ME,Fluid Mechanics] #One, more categories or no at all.
 title:  "Reynolds Transport Theorem"
-date:   2022-06-23 02:05:42 +0200
+date:   2022-06-18 02:05:42 +0200
 author: hsjung02 #Author's nick.
-#nextPart: _posts/2021-06-17-Bernoulli-Equation.md #Next part.
+#nextPart: \me\fluid mechanics\2022\06\19\Bernoulli-Equation.html #Next part.
 #prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
 #og_image: assets/example.png #Open Graph preview image.
 og_description: "유체역학에서 주로 사용하는 지배방정식들은 Reynolds Transport Theorem을 통해 요약할 수 있다." #Open Graph description.

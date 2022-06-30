@@ -2,7 +2,7 @@
 layout: post #Do not change.
 category: [ME,Fluid Mechanics] #One, more categories or no at all.
 title:  "Bernoulli Equation"
-date:   2022-06-23 10:05:42 +0200
+date:   2022-06-19 10:05:42 +0200
 author: hsjung02 #Author's nick.
 #nextPart: _posts/2021-06-18-Navier-Stokes-Equation.md #Next part.
 #prevPart: _posts/2021-06-16-Reynolds-transport-theorem.md #Previous part.
