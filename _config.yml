@@ -271,8 +271,8 @@ display_categories: ['Notes', 'Personal'] # these categories will be displayed o
 
 scholar:
 
-  last_name: [Jung]
-  first_name: [HyunSeo]
+  last_name: [Einstein]
+  first_name: [Albert, A.]
 
   style: apa
   locale: kr
