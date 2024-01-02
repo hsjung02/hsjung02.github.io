@@ -3,7 +3,8 @@ layout: post
 title:  "Machine Learning Basic"
 date:   2023-06-21 02:05:42 +0200
 description: "다양한 머신러닝 기법에 대하여"
-category: [Artificial Intelligence]
+category: [Notes]
+tags: [Artificial Intelligence]
 fb_app_id: example
 lang: ko
 use_math: true

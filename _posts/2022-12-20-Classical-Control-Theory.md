@@ -3,7 +3,8 @@ layout: post
 title:  "Classical Control Theory"
 date:   2022-12-20 02:05:42 +0200
 description: "고전제어에서는 주파수 응답을 이용해 시스템 특성 파악 및 제어기 설계를 한다"
-category: [Control Theory]
+category: [Notes]
+tags: [Control theory]
 fb_app_id: example
 lang: ko
 use_math: true
