@@ -3,7 +3,8 @@ layout: post
 title:  "Modern Control Theory"
 date:   2023-06-21 02:05:42 +0200
 description: "현대제어에서는 state-space model을 구성하고 시스템을 분석한다."
-category: [Control Theory]
+category: [Notes]
+tags: [Control theory]
 fb_app_id: example
 lang: ko
 use_math: true
