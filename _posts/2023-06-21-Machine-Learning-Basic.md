@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Artificial Intelligence] #One, more categories or no at all.
 title:  "Machine Learning Basic"
 date:   2023-06-21 02:05:42 +0200

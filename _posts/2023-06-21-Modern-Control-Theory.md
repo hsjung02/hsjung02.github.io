@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Control Theory] #One, more categories or no at all.
 title:  "Modern Control Theory"
 date:   2023-06-21 02:05:42 +0200

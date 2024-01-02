@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Digital System Design] #One, more categories or no at all.
 title:  "Digital System Design"
 date:   2022-12-20 02:05:42 +0200

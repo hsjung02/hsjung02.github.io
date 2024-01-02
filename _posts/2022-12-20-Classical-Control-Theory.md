@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Control Theory] #One, more categories or no at all.
 title:  "Classical Control Theory"
 date:   2022-12-20 02:05:42 +0200

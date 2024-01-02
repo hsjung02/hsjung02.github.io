@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Personal] #One, more categories or no at all.
 title:  "시스템설계를 마치며"
 date:   2023-12-29 00:05:42 +0200

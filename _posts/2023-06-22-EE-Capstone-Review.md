@@ -1,5 +1,5 @@
 ---
-layout: posts #Do not change.
+layout: post #Do not change.
 category: [Personal] #One, more categories or no at all.
 title:  "종합설계과제를 마치며"
 date:   2023-06-22 02:05:42 +0200
