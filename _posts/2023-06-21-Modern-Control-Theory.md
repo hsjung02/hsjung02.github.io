@@ -1,13 +1,9 @@
 ---
-layout: post #Do not change.
-category: [Control Theory] #One, more categories or no at all.
+layout: post
 title:  "Modern Control Theory"
 date:   2023-06-21 02:05:42 +0200
-author: hsjung02 #Author's nick.
-#nextPart: \me\fluid mechanics\2022\06\19\Bernoulli-Equation.html #Next part.
-#prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
-#og_image: assets/example.png #Open Graph preview image.
-og_description: "현대제어에서는 state-space model을 구성하고 시스템을 분석한다." #Open Graph description.
+description: "현대제어에서는 state-space model을 구성하고 시스템을 분석한다."
+category: [Control Theory]
 fb_app_id: example
 lang: ko
 use_math: true

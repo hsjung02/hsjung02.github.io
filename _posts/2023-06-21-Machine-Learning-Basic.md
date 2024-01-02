@@ -1,13 +1,9 @@
 ---
-layout: post #Do not change.
-category: [Artificial Intelligence] #One, more categories or no at all.
+layout: post
 title:  "Machine Learning Basic"
 date:   2023-06-21 02:05:42 +0200
-author: hsjung02 #Author's nick.
-#nextPart: \me\fluid mechanics\2022\06\19\Bernoulli-Equation.html #Next part.
-#prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
-#og_image: assets/example.png #Open Graph preview image.
-og_description: "다양한 머신러닝 기법에 대하여" #Open Graph description.
+description: "다양한 머신러닝 기법에 대하여"
+category: [Artificial Intelligence]
 fb_app_id: example
 lang: ko
 use_math: true

@@ -1,13 +1,9 @@
 ---
-layout: post #Do not change.
-category: [Control Theory] #One, more categories or no at all.
+layout: post
 title:  "Classical Control Theory"
 date:   2022-12-20 02:05:42 +0200
-author: hsjung02 #Author's nick.
-#nextPart: \me\fluid mechanics\2022\06\19\Bernoulli-Equation.html #Next part.
-#prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
-#og_image: assets/example.png #Open Graph preview image.
-og_description: "고전제어에서는 주파수 응답을 이용해 시스템 특성 파악 및 제어기 설계를 한다" #Open Graph description.
+description: "고전제어에서는 주파수 응답을 이용해 시스템 특성 파악 및 제어기 설계를 한다"
+category: [Control Theory]
 fb_app_id: example
 lang: ko
 use_math: true

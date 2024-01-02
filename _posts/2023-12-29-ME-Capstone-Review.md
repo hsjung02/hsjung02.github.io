@@ -1,13 +1,9 @@
 ---
-layout: post #Do not change.
-category: [Personal] #One, more categories or no at all.
+layout: post
 title:  "시스템설계를 마치며"
 date:   2023-12-29 00:05:42 +0200
-author: hsjung02 #Author's nick.
-#nextPart: \me\fluid mechanics\2022\06\19\Bernoulli-Equation.html #Next part.
-#prevPart: _posts/2021-06-17-Bernoulli-Equation.md #Previous part.
-#og_image: assets/example.png #Open Graph preview image.
-og_description: "시스템설계를 마치며" #Open Graph description.
+description: "시스템설계를 마치며"
+category: [Personal]
 fb_app_id: example
 lang: ko
 use_math: true
