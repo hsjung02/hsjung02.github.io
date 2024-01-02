@@ -275,7 +275,7 @@ scholar:
   first_name: [HyunSeo]
 
   style: apa
-  locale: en
+  locale: kr
 
   source: /_bibliography/
   bibliography: papers.bib
