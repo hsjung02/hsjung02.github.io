@@ -5,7 +5,7 @@ description: Analyze the blackbox video of car accident and determine the compar
 img: 
 redirect: https://github.com/hsjung02/Blackbox-Video-Analyzing-System
 importance: 3
-category: work
+category: high school
 ---
 
 Every project has a beautiful feature showcase page.
