@@ -4,8 +4,8 @@ title: Lipreading device
 description: a project that redirects to another website
 img: assets/img/7.jpg
 redirect: https://unsplash.com
-importance: undergraduate
-category: work
+importance: 3
+category: undergraduate
 ---
 
 Every project has a beautiful feature showcase page.
