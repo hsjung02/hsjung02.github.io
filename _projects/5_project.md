@@ -6,6 +6,7 @@ img:
 redirect: https://github.com/hsjung02/Blackbox-Video-Analyzing-System
 importance: 3
 category: high school
+giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

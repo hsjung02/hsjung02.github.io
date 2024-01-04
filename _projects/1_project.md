@@ -6,6 +6,7 @@ img: assets/img/12.jpg
 importance: 1
 category: undergraduate
 related_publications: einstein1956investigations, einstein1950meaning
+giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.
