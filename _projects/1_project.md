@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Dynamic Speed bump
-description: a project with a background image
+description: Development of a dynamic speed bump for speed-selective penalty on cars
 img: assets/img/12.jpg
 importance: 1
-category: undergraduate
-related_publications: einstein1956investigations, einstein1950meaning
+category: 2023
 giscus_comments: true
 ---
 

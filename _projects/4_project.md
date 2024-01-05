@@ -5,7 +5,7 @@ description: Python implementation of some games appeared in the tv show 'The Ge
 img: 
 redirect: https://github.com/hsjung02/TheGenius
 importance: 3
-category: high school
+category: 2019
 giscus_comments: true
 ---
 

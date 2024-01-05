@@ -1,10 +1,10 @@
 ---
 layout: page
 title: RL-based Chip placement automation
-description: a project with a background image and giscus comments
+description: Reinforcement learning based chip placement automation and reward function design
 img: assets/img/3.jpg
 importance: 2
-category: undergraduate
+category: 2023
 giscus_comments: true
 ---
 

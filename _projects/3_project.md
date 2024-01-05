@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Lipreading device
-description: a project that redirects to another website
+description: Development of a lipreading device with human face tracking
 img: assets/img/7.jpg
 redirect: https://unsplash.com
 importance: 3
-category: undergraduate
+category: 2021
 giscus_comments: true
 ---
 
