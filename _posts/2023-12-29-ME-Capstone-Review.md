@@ -8,6 +8,8 @@ fb_app_id: example
 lang: ko
 use_math: true
 giscus_comments: true
+toc:
+  sidebar: left
 ---
 
 
