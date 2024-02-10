@@ -5,6 +5,8 @@
       value: HyunSeo Jung
     - name: Now
       value: Master student at MARCH Lab, POSTECH
+    - name: Nationality
+      value: South Korea
 
 - title: Education
   type: time_table
