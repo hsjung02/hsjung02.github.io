@@ -7,7 +7,8 @@ category: [Personal]
 fb_app_id: example
 lang: ko
 use_math: true
-giscus_comments: true
+# giscus_comments: true
+giscus: true
 ---
 
 
