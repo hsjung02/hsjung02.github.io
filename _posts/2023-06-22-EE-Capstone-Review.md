@@ -7,6 +7,7 @@ category: [Personal] #One, more categories or no at all.
 fb_app_id: example
 lang: ko
 use_math: true
+giscus_comments: true
 ---
 
 1년간 정말 열심히 했던 종합설계과제가 끝이 나고, 뭔가 시원섭섭한 마음에 그간 어디에서도 할 수 없었던 이야기들을 남기려고 한다. 24개의 중간보고서, 12번의 지도교수 면담, 5번의 발표, 1번의 학회발표에는 담을 수 없었던 그런 얘기들…을 까먹기 전에 몇 자 적어보았다.
