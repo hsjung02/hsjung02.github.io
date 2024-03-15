@@ -30,6 +30,7 @@ A determinant is a scalar and is defined for a square matrix.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 The determinant of a n*n matrix A is denoted by |A|.
 
 |A| is defined as:
@@ -49,6 +50,14 @@ $|A|$
 is defined as:
 
 >>>>>>> parent of be8fba9 (Math fix)
+=======
+The determinant of a n*n matrix A is denoted by 
+$|A|$.
+
+$|A|$ 
+is defined as:
+
+>>>>>>> parent of be8fba9 (Math fix)
 $$|A| = \sum_{j=1}^n (-1)^{i+j}a_{ij}M_{ij}$$
 
 ### Properties of determinant
@@ -56,6 +65,7 @@ $$|A| = \sum_{j=1}^n (-1)^{i+j}a_{ij}M_{ij}$$
 - Interchange of two rows (or columns) multiplies the value of the determinant by -1
 - Addition of a multiple of a row (or column) to another row (or column) does not alter the value of the determinant
 - Multiplication of a row (or column) by a constant c multiplies the value of the determinant by c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - When A and B are n*n matrices, |AB| = |A||B|
@@ -84,11 +94,22 @@ $rank(A)=n \ iff\ |A|\not=0$
 
 The inverse of an n*n matrix A is denoted by $A^{-1}$ and is an n*n matrix such that $AA^{-1}=A^{-1}A=I$
 >>>>>>> parent of be8fba9 (Math fix)
+=======
+- When A and B are n*n matrices, 
+$|AB| = |A||B|$
+- When A is an n*n matrix, 
+$rank(A)=n \ iff\ |A|\not=0$
+
+## Inverse matrix
+
+The inverse of an n*n matrix A is denoted by $A^{-1}$ and is an n*n matrix such that $AA^{-1}=A^{-1}A=I$
+>>>>>>> parent of be8fba9 (Math fix)
 
 If A has an inverse, the inverse is unique
 
 If A has an inverse, then A is called a nonsingular matrix
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 The inverse of a nonsingular matrix A can be given by 
@@ -113,6 +134,13 @@ $A^{-1}=\frac{1}{|A|}adj(A)=\frac{1}{|A|}C^T(A)$
 ### Propreties of an inverse matrix
 
 >>>>>>> parent of be8fba9 (Math fix)
+=======
+The inverse of a nonsingular matrix A can be gien by 
+$A^{-1}=\frac{1}{|A|}adj(A)=\frac{1}{|A|}C^T(A)$
+
+### Propreties of an inverse matrix
+
+>>>>>>> parent of be8fba9 (Math fix)
 - The inverse of an n*n matrix A existss iff 
 $|A|\not=0$
 - If A and B are nonsingular, $(AB)^{-1}=B^{-1}A^{-1}$
@@ -120,6 +148,9 @@ $|A|\not=0$
 - If A is a nonsingular matrix, 
 $|A^{-1}|=1/|A|$
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of be8fba9 (Math fix)
+=======
 >>>>>>> parent of be8fba9 (Math fix)
 =======
 >>>>>>> parent of be8fba9 (Math fix)
@@ -603,7 +634,11 @@ pf of 1 ← : Suppose $(A,B)$ is not controllable.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Do controllable decomposition $$\tilde{A}=\begin{pmatrix}\tilde{A_{11}} & \tilde{A_{12}} \\ 0 & \tilde{A_{22}}\end{pmatrix}, \tilde{B}=\begin{pmatrix}\tilde{B_1}\\ 0\end{pmatrix}$$, let $$\lambda, v$$ be eigenvalue of $$\tilde{A_{22}}$$ and corresponding eigenvector, where $$Re\{\lambda\}\ge0$$. Then $$(\tilde{A}-\lambda I \ \tilde{B})\begin{pmatrix}0 \\ v\end{pmatrix}=\begin{pmatrix}\tilde{A_{11}}-\lambda I & \tilde{A} & \tilde{B_1} \\ 0 & \tilde{A_{22}}-\lambda I & 0\end{pmatrix}\begin{pmatrix}0 \\ v\end{pmatrix}=0$$ therefore $$rank(\tilde{A}-\lambda I \ \tilde B)<n$$. $$rank(A-\lambda I \ B)=rank(T^{-1}(A-\lambda I \ B)\begin{pmatrix}T & 0 \\ 0 & I\end{pmatrix})=rank(\tilde A - \lambda I \ \tilde B)<n$$
+=======
+Do controllable decomposition $\tilde{A}=\begin{pmatrix}\tilde{A_{11}} & \tilde{A_{12}} \\ 0 & \tilde{A_{22}}\end{pmatrix}, \tilde{B}=\begin{pmatrix}\tilde{B_1}\\\0\end{pmatrix}$, let $\lambda, v$ be eigenvalue of $\tilde{A_{22}}$ and corresponding eigenvector, where $Re\{\lambda\}\ge0$. Then $(\tilde{A}-\lambda I \ \tilde{B})\begin{pmatrix}0 \\ v\end{pmatrix}=\begin{pmatrix}\tilde{A_{11}}-\lambda I & \tilde{A} & \tilde{B_1} \\ 0 & \tilde{A_{22}}-\lambda I & 0\end{pmatrix}\begin{pmatrix}0 \\ v\end{pmatrix}=0$ therefore $rank(\tilde{A}-\lambda I \ \tilde B)<n$. $rank(A-\lambda I \ B)=rank(T^{-1}(A-\lambda I \ B)\begin{pmatrix}T & 0 \\ 0 & I\end{pmatrix})=rank(\tilde A - \lambda I \ \tilde B)<n$
+>>>>>>> parent of be8fba9 (Math fix)
 =======
 Do controllable decomposition $\tilde{A}=\begin{pmatrix}\tilde{A_{11}} & \tilde{A_{12}} \\ 0 & \tilde{A_{22}}\end{pmatrix}, \tilde{B}=\begin{pmatrix}\tilde{B_1}\\\0\end{pmatrix}$, let $\lambda, v$ be eigenvalue of $\tilde{A_{22}}$ and corresponding eigenvector, where $Re\{\lambda\}\ge0$. Then $(\tilde{A}-\lambda I \ \tilde{B})\begin{pmatrix}0 \\ v\end{pmatrix}=\begin{pmatrix}\tilde{A_{11}}-\lambda I & \tilde{A} & \tilde{B_1} \\ 0 & \tilde{A_{22}}-\lambda I & 0\end{pmatrix}\begin{pmatrix}0 \\ v\end{pmatrix}=0$ therefore $rank(\tilde{A}-\lambda I \ \tilde B)<n$. $rank(A-\lambda I \ B)=rank(T^{-1}(A-\lambda I \ B)\begin{pmatrix}T & 0 \\ 0 & I\end{pmatrix})=rank(\tilde A - \lambda I \ \tilde B)<n$
 >>>>>>> parent of be8fba9 (Math fix)
