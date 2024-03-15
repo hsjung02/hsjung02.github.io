@@ -43,7 +43,7 @@ $$ |A| = \sum_{j=1}^n (-1)^{i+j}a_{ij}M_{ij} $$
 - Addition of a multiple of a row (or column) to another row (or column) does not alter the value of the determinant
 - Multiplication of a row (or column) by a constant c multiplies the value of the determinant by c
 - When A and B are n*n matrices, $$ |AB| = |A||B| $$
-- When A is an n*n matrix, $$ rank(A)=n \ iff\ |A|\not=0 $$
+- When A is an n*n matrix, $$ rank(A)=n \ iff \ |A|\not=0 $$
 
 ## Inverse matrix
 

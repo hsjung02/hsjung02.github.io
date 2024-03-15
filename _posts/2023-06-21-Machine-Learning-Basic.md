@@ -261,7 +261,7 @@ $$
 
 ## Kernels
 
-If we do not want to allow misclassfications, or datas are non-linearly separable, we can use kernels. Kernel is a mapping of data to higher dimensions. For example, $$x=\begin{pmatrix}x_1 \\\ x_2\end{pmatrix}$$ can be expressed as $$z=\phi(x)=\begin{pmatrix}1 \\\ x_1^2\\\x_1x_2\\\x_2^2\end{pmatrix}$$.
+If we do not want to allow misclassfications, or datas are non-linearly separable, we can use kernels. Kernel is a mapping of data to higher dimensions. For example, $$x=\begin{pmatrix}x_1 \\ x_2\end{pmatrix}$$ can be expressed as $$z=\phi(x)=\begin{pmatrix}1 \\ x_1^2\\ x_1x_2\\ x_2^2\end{pmatrix}$$.
 
 ## Logistic regression
 

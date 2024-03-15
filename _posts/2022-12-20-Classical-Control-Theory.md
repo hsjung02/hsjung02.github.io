@@ -70,7 +70,7 @@ $$H(s)=\frac{\omega_{n}^{2}}{s^{2}+2\zeta\omega_{n}+\omega_{n}^{2}}$$으로 쓸 
 
 대부분의 시스템은 그것을 구성하는 서브시스템으로 분할할 수 있는데, 이때 각 서브시스템의 요소들은 서로에게 영향을 주지 않는다. 대신, 한 서브시스템의 출력이 다른 서브시스템의 입력으로 사용되고는 한다. 이 관계를 도식화하기 위한 툴이 바로 block diagram이다. Block diagram을 보면 전달함수를 쉽게 구할 수 있다.
 
-![Untitled](/assets/img/posts/Classical-Control-Theory/Umtitled.png)
+![Untitled](/assets/img/posts/Classical-Control-Theory/Untitled.png)
 
 
 ## Inverse Laplace Transform by partial fraction expansion
