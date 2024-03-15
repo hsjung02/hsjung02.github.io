@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IMU & Filtering"
-date:   2024-03-15 02:05:42 +0200
+date:   2024-03-10 02:05:42 +0200
 description: "IMU 간단한 이론 및 사용법"
 category: [Notes]
 tags: [Tech]
