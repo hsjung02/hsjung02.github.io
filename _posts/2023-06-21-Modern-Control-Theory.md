@@ -31,9 +31,9 @@ The ranks of a matrix A is the maximal number of linearly independent cloumns of
 
 A determinant is a scalar and is defined for a square matrix.
 
-The determinant of a n*n matrix A is denoted by $$ |A| $$.
+The determinant of a n*n matrix A is denoted by |A|.
 
-$$ |A| $$ is defined as:
+|A| is defined as:
 
 $$ |A| = \sum_{j=1}^n (-1)^{i+j}a_{ij}M_{ij} $$
 
@@ -42,25 +42,26 @@ $$ |A| = \sum_{j=1}^n (-1)^{i+j}a_{ij}M_{ij} $$
 - Interchange of two rows (or columns) multiplies the value of the determinant by -1
 - Addition of a multiple of a row (or column) to another row (or column) does not alter the value of the determinant
 - Multiplication of a row (or column) by a constant c multiplies the value of the determinant by c
-- When A and B are n*n matrices, $$ |AB| = |A||B| $$
-- When A is an n*n matrix, $$ rank(A)=n \ iff \ |A|\not=0 $$
+- When A and B are n*n matrices, |AB| = |A||B|
+- When A is an n*n matrix, $$ rank(A)=n $$ iff |A| $$ \not=0 $$
 
 ## Inverse matrix
 
-The inverse of an n*n matrix A is denoted by $$ A^{-1} $$ and is an n*n matrix such that $$ AA^{-1}=A^{-1}A=I $$
+The inverse of an n*n matrix A is denoted by $$ A^{-1} $$ and is an n *n matrix such that $$ AA^{-1}=A^{-1}A=I $$
 
 If A has an inverse, the inverse is unique
 
 If A has an inverse, then A is called a nonsingular matrix
 
-The inverse of a nonsingular matrix A can be gien by $$ A^{-1}=\frac{1}{|A|}adj(A)=\frac{1}{|A|}C^T(A) $$
+The inverse of a nonsingular matrix A can be given by 
+$$ A^{-1}=\frac{1}{|A|}adj(A)=\frac{1}{|A|}C^T(A) $$
 
 ### Propreties of an inverse matrix
 
 - The inverse of an n*n matrix A existss iff $$ |A|\not=0 $$
 - If A and B are nonsingular, $$ (AB)^{-1}=B^{-1}A^{-1} $$
 - If A is a nonsingular matrix and $$ \alpha $$ is a scalar, $$ (\alpha A)^{-1}=A^{-1}/\alpha $$
-- If A is a nonsingular matrix, $$ |A^{-1}|=1/|A| $$
+- If A is a nonsingular matrix, $$ \text{det} (A^{-1})=1/\text{det}(A) $$
 
 ## Eigenvalues and Eigenvectors
 
@@ -316,12 +317,15 @@ $$
 &\le|e^{\lambda_nt}|(1+|t|+|t^2|+\cdots+|t^{n-1}|)\\
 &\le|e^{\lambda_nt}|\cdot n(1+t^{n-1})\\
 \end{align*}\\
+
 \begin{align*}
 ||e^{Jt}||&\le|e^{\lambda_nt}|\cdot n(1+t^{n-1})\\
 &=e^{-2\lambda t}\cdot n(1+t^{n-1})\\
 &\le c\cdot e^{-\lambda t}\\
 \end{align*}\\
+
 \rightarrow ||x(t)||\le||P||\cdot ||P^{-1}||\cdot C e^{-\lambda t}||x(0)||
+
 $$
 
 3→1: 3→2→1
@@ -533,7 +537,7 @@ $$(A,B)$$ is not controllable.
 
 pf of 1 ← : Suppose $$(A,B)$$ is not controllable.
 
-Do controllable decomposition $$\tilde{A}=\begin{pmatrix}\tilde{A_{11}} & \tilde{A_{12}} \\ 0 & \tilde{A_{22}}\end{pmatrix}, \tilde{B}=\begin{pmatrix}\tilde{B_1}\\\0\end{pmatrix}$$, let $$\lambda, v$$ be eigenvalue of $$\tilde{A_{22}}$$ and corresponding eigenvector, where $$Re\{\lambda\}\ge0$$. Then $$(\tilde{A}-\lambda I \ \tilde{B})\begin{pmatrix}0 \\ v\end{pmatrix}=\begin{pmatrix}\tilde{A_{11}}-\lambda I & \tilde{A} & \tilde{B_1} \\ 0 & \tilde{A_{22}}-\lambda I & 0\end{pmatrix}\begin{pmatrix}0 \\ v\end{pmatrix}=0$$ therefore $$rank(\tilde{A}-\lambda I \ \tilde B)<n$$. $$rank(A-\lambda I \ B)=rank(T^{-1}(A-\lambda I \ B)\begin{pmatrix}T & 0 \\ 0 & I\end{pmatrix})=rank(\tilde A - \lambda I \ \tilde B)<n$$
+Do controllable decomposition $$\tilde{A}=\begin{pmatrix}\tilde{A_{11}} & \tilde{A_{12}} \\ 0 & \tilde{A_{22}}\end{pmatrix}, \tilde{B}=\begin{pmatrix}\tilde{B_1}\\ 0\end{pmatrix}$$, let $$\lambda, v$$ be eigenvalue of $$\tilde{A_{22}}$$ and corresponding eigenvector, where $$Re\{\lambda\}\ge0$$. Then $$(\tilde{A}-\lambda I \ \tilde{B})\begin{pmatrix}0 \\ v\end{pmatrix}=\begin{pmatrix}\tilde{A_{11}}-\lambda I & \tilde{A} & \tilde{B_1} \\ 0 & \tilde{A_{22}}-\lambda I & 0\end{pmatrix}\begin{pmatrix}0 \\ v\end{pmatrix}=0$$ therefore $$rank(\tilde{A}-\lambda I \ \tilde B)<n$$. $$rank(A-\lambda I \ B)=rank(T^{-1}(A-\lambda I \ B)\begin{pmatrix}T & 0 \\ 0 & I\end{pmatrix})=rank(\tilde A - \lambda I \ \tilde B)<n$$
 
 pf of 2 → : Suppose $$\exists \lambda \ s.t. \ Re\{\lambda\}\ge 0$$ and $$rank(A-\lambda I \ B)<n$$.
 
