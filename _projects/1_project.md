@@ -40,7 +40,7 @@ Design of a speed bump that is only speed-dependent and robust
     
     Pressure relief valve란 가해지는 압력에 따라 개폐가 결정되는 장치이다. TransCalm 시스템에서는 PRV와 air cylinder를 함께 사용하였다. 아래 그림과 같이 장비하면, 차량이 저속 주행할 때는 약한 압력이 걸리므로 밸브가 열린다. 밸브가 열리면 air cylinder의 변형이 자유롭기 때문에 방지턱이 soft해진다. 따라서 차량이 그 위를 지나갈 때 큰 충격을 받지 않게 된다. 반대로 차량이 고속 주행할 경우 높은 압력이 걸리므로 밸브가 닫힌다. 밸브가 닫히면 실린더의 변형이 불가능하므로(비압축성 유체를 가정하면) 차량이 위로 지나갈 때 턱의 형태를 유지하게 된다.
     
-    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%201.png)
+    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%201.png){: width="100%" height="100%"}
     
     이것은 설치도 용이하고 성능도 꽤 좋아 보이는데, 내가 생각하기에는 속도를 측정하는 방식에 약간의 문제가 있어 보였다. 압력을 통해 속도를 간접적으로 측정하기 때문에 차량의 중량에 따라 일정한 속도 제한을 적용하지 못할 것 같았다. 다시 말해, 무거운 차는 천천히 달려도 강한 압력이 가해져서 충격을 받고 가벼운 차는 빨리 달려도 충격을 받지 않는 상황이 가능한 것이다.
     
