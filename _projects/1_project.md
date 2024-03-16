@@ -48,9 +48,9 @@ Design of a speed bump that is only speed-dependent and robust
     
     Actibump 시스템에서는 레이더 센서를 이용하여 차량의 속도를 측정한 후, 과속이면 아래 사진과 같이 구조물을 아래로 내려서 충격을 받게 하였다. 정속 주행 시에는 평지를 달릴 수 있다.
     
-    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%202.png)
+    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%202.png){: width="100%" height="100%"}
     
-    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%203.png)
+    ![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%203.png){: width="100%" height="100%"}
     
     이것을 처음 봤을 때, 그럴거면 그냥 과속단속 카메라를 달지 싶었다. 비용적으로 매우 비효율적이라는 생각이다. 그리고 전자부품이 많이 달려 있어서 고장나기도 쉬울 것 같았다.
     
