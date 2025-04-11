@@ -71,8 +71,8 @@ Design of a speed bump that is only speed-dependent and robust
 
 사실, 처음부터 염두에 두고 있던 설계가 있었다. 
 
-<div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/embed/_CIA17Fo4Gg?si=zUR5l0psssI7v5JC&amp;start=22" class="img-fluid rounded z-depth-1" %}
+<div>
+  {% include video.liquid path="https://www.youtube.com/embed/_CIA17Fo4Gg?si=zUR5l0psssI7v5JC&amp;start=22" class="img-fluid rounded z-depth-1" %}
 </div>
 
 ### ELR을 이용한 초기 디자인
