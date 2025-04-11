@@ -72,7 +72,7 @@ Design of a speed bump that is only speed-dependent and robust
 사실, 처음부터 염두에 두고 있던 설계가 있었다. 
 
 <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://youtu.be/_CIA17Fo4Gg?si=-3fxZQ_OvGoWG_Ok&t=22" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="https://www.youtube.com/embed/_CIA17Fo4Gg?si=zUR5l0psssI7v5JC&amp;start=22" class="img-fluid rounded z-depth-1" %}
 </div>
 
 ### ELR을 이용한 초기 디자인
@@ -85,7 +85,9 @@ Design of a speed bump that is only speed-dependent and robust
 
 초기 설계는 아래 그림과 같이 차가 방지턱을 밟고 지나가면(1) 방지턱이 움직이고(2), 어떠한 메카니즘(ex. 랙과 피니언)을 통해(3) ELR에 움직임이 전달된다(4). 이 움직임이 빠르면 (4)의 움직임이 잠기기 때문에 (2)도 잠겨서 차가 ‘덜컹’하게 된다. 움직임이 느리면 (4)가 부드럽게 움직이고, 따라서 (2)도 부드럽게 움직이므로 차가 평지를 달릴 수 있게 된다.
 
-![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%204.png)
+<p align="center">
+  <img src="/assets/img/posts/Dynamic-Speed-Bump/Untitled%204.png" width="80%">
+</p>
 
 ### 설계를 바꿔야 했던 이유
 
@@ -117,8 +119,9 @@ Design of a speed bump that is only speed-dependent and robust
 
 자동차의 속도를 정확히 측정하기 위해 미끄러짐 없는 구름을 가정하였다. 아래 사진과 같이 지하에 롤러를 설치한다. 차가 롤러 위를 지나가면서 바퀴와 롤러가 미끄러짐 없는 구름운동을 하면 롤러의 회전속도(정확히 말하자면, 접점의 속도)가 자동차의 속도와 같아진다. 이 방식으로 자동차의 속도를 ‘복사’할 수 있다.
 
-![Untitled](/assets/img/posts/Dynamic-Speed-Bump/Untitled%206.png)
-
+<p align="center">
+  <img src="/assets/img/posts/Dynamic-Speed-Bump/Untitled%206.png" width="80%">
+</p>
 (2) 방지턱 메카니즘 설계
 
 ELR(안전벨트 모듈)을 사용할 계획이었고, (1)번에서 롤러를 이용해 자동차의 속도를 복사하기로 했기 때문에 롤러&ELR 서브모듈을 기어 체인에 연결한다고 생각하면 차가 빠르게 오면 기어 체인이 회전하지 않을 것이고 차가 천천히 오면 기어 체인이 회전할 것이다. 따라서 평상시에는 움직이지 않고 기어가 움직이면 아래로 내려가는 방지턱 메카니즘을 설계해야 했다.
