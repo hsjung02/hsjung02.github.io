@@ -133,12 +133,7 @@ ninja.data = [{
             },},{id: "news-i-have-finished-my-b-s-amp-amp-starting-master-degree-course",
           title: 'I have finished my B.S. &amp;amp;amp; starting Master degree course.',
           description: "",
-          section: "News",},{id: "projects-dynamic-speed-bump",
-          title: 'Dynamic Speed Bump',
-          description: "Development of a dynamic speed bump for speed-selective penalty on cars",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-6",
+          section: "News",},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
@@ -158,6 +153,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-blackbox-video-analyzing-system",
+          title: 'Blackbox video analyzing system',
+          description: "Blackbox video analyzing system for determining fault rate on car accidents",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/blackbox/";
+            },},{id: "projects-dynamic-speed-bump",
+          title: 'Dynamic Speed Bump',
+          description: "Development of a dynamic speed bump for speed-selective penalty on cars",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dynamic_speed_bump/";
+            },},{id: "projects-the-genius",
+          title: 'The Genius',
+          description: "Funny games appeared on &#39;The Genius&#39;",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/the_genius/";
             },},{
         id: 'social-email',
         title: 'email',
