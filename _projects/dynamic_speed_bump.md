@@ -2,7 +2,7 @@
 layout: page
 title: Dynamic Speed Bump
 description: Development of a dynamic speed bump for speed-selective penalty on cars
-img: assets/img/12.jpg
+img: assets/img/thumbnails/speedbump.png
 importance: 1
 category: '2023'
 giscus_comments: false
