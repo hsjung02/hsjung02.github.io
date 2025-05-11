@@ -37,7 +37,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-어학능력",
+        },{id: "post-c-setup",
+        
+          title: "C++ Setup",
+        
+        description: "VS Code에서 C++ 실행하는 방법",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Cpp/";
+          
+        },
+      },{id: "post-iguanatex-설치",
+        
+          title: "Iguanatex 설치",
+        
+        description: "Iguanatex 설치 방법 정리",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Iguanatex/";
+          
+        },
+      },{id: "post-pc-setup",
+        
+          title: "PC Setup",
+        
+        description: "노트북 초기화 후 필요한 프로그램 설치",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/PC-Setup/";
+          
+        },
+      },{id: "post-어학능력",
         
           title: "어학능력",
         
