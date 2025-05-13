@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-c-setup",
+        },{id: "post-노트북-배터리-효율-개선",
+        
+          title: "노트북 배터리 효율 개선",
+        
+        description: "노트북 배터리 효율 개선",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Laptop-Battery/";
+          
+        },
+      },{id: "post-c-setup",
         
           title: "C++ Setup",
         
