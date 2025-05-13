@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "노트북 배터리 효율 개선"
-date:   2025-05-12 00:05:42 +0200
+date:   2025-05-12 00:00:42 +0200
 description: "노트북 배터리 효율 개선"
 category: [Personal]
 fb_app_id: example
