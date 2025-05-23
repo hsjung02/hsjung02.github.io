@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-노트북-배터리-효율-개선",
+        },{id: "post-마이크-만들기",
+        
+          title: "마이크 만들기",
+        
+        description: "DIY Microphone",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/Microphone/";
+          
+        },
+      },{id: "post-노트북-배터리-효율-개선",
         
           title: "노트북 배터리 효율 개선",
         
