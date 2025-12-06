@@ -26,13 +26,19 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a master student at [POSTECH](https://postech.ac.kr), advised by [prof. Keehoon Kim](https://scholar.google.com/citations?user=P8CKlYQAAAAJ&hl=ko&oi=ao) and working with awesome members of [MARCH Lab.](https://march.postech.ac.kr) I did my B.S. at POSTECH, in Mechanical engineering and Electrical engineering with honor(Summa Cum Laude).
+I am an upcoming Ph.D. student at POSTECH MechE.
+Previously, I did my master's degree at POSTECH, where I was fortunate to be advised by [prof. Keehoon Kim](https://scholar.google.com/citations?user=P8CKlYQAAAAJ&hl=ko&oi=ao).
+Prior to that, I did my undergraduate studies at POSTECH, majoring in Mechanical Engineering and Electrical Engineering.
 
-My research interests include
-- robotics
-- control theory
-- artificial intelligence
+As a robotics researcher, my goal is to put "everything under control".
+That means, to formulate the robotic tasks under control theoretical framework for reliable and performant task execution.
 
-but not limited to.
+My current research interests include the followings.
+- Dynamics learning
+- Embedded MPC solution
+
+Previously I worked on the following topics.
+- Deep RL-based combinatorial optimization
+- Stability analysis of discrete-time PID controllers
 
 I enjoy playing [chess](https://www.chess.com/member/7seo7) and [League of Legends](https://www.fow.lol/find/kr/%EB%8D%94%EB%B8%94%EC%B4%88%EC%BD%94%EC%B9%A9-KR1)

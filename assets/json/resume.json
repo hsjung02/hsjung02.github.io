@@ -40,7 +40,16 @@
       "location": "Pohang, South Korea",
       "url": "https://postech.ac.kr",
       "area": "Mechanical engineering",
-      "studyType": "Master student",
+      "studyType": "M.S.",
+      "startDate": "2024-02-02",
+      "score": "10"
+    },
+    {
+        "institution": "Pohang University of Science and Technology",
+      "location": "Pohang, South Korea",
+      "url": "https://postech.ac.kr",
+      "area": "Mechanical engineering",
+      "studyType": "Ph.D. student",
       "startDate": "2024-02-02",
       "score": "10"
     }
