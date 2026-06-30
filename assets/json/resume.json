@@ -6,10 +6,10 @@
     "email": "hsjung02[at]postect[dot]ac[dot]kr",
     "phone": "",
     "url": "https://hsjung02.github.io",
-    "summary": "Master student in robotics",
+    "summary": "Ph.D. student in robotics",
     "location": {
-      "address": "77 Cheongam-ro, Nam-gu",
-      "postalCode": "37673",
+      "address": "39 Jigok-ro, Nam-gu",
+      "postalCode": "376666",
       "city": "Pohang-Si",
       "countryCode": "KR",
       "region": "Gyeongsangbukdo"
@@ -42,6 +42,8 @@
       "area": "Mechanical engineering",
       "studyType": "M.S.",
       "startDate": "2024-02-02",
+      "endDate": "2026-02-02",
+      "courses": "On the Stability and Performance of Discrete-time PID Tracking Controllers for Lagrangian Systems",
       "score": "10"
     },
     {
@@ -50,7 +52,7 @@
       "url": "https://postech.ac.kr",
       "area": "Mechanical engineering",
       "studyType": "Ph.D. student",
-      "startDate": "2024-02-02",
+      "startDate": "2026-02-02",
       "score": "10"
     }
   ],

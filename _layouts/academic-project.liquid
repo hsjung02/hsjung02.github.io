@@ -1,0 +1,384 @@
+---
+---
+{% assign asset_root = page.academic_project_assets | default: '/assets/academic-project' %}
+{% assign paper_title = page.paper_title | default: page.title %}
+{% assign paper_description = page.paper_description | default: page.description %}
+{% assign authors = page.authors | default: empty %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ paper_description | escape }}">
+  <meta property="og:title" content="{{ paper_title | escape }}">
+  <meta property="og:description" content="{{ paper_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.img %}
+  <meta property="og:image" content="{{ page.img | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  {% endif %}
+  <meta name="twitter:title" content="{{ paper_title | escape }}">
+  <meta name="twitter:description" content="{{ paper_description | escape }}">
+  {% if page.img %}<meta name="twitter:image" content="{{ page.img | absolute_url }}">{% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords | escape }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ paper_title }}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ asset_root | append: '/css/bulma.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ asset_root | append: '/css/bulma-carousel.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ asset_root | append: '/css/bulma-slider.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ asset_root | append: '/css/fontawesome.all.min.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="{{ asset_root | append: '/css/index.css' | relative_url }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="{{ asset_root | append: '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script src="{{ asset_root | append: '/js/bulma-carousel.min.js' | relative_url }}"></script>
+  <script src="{{ asset_root | append: '/js/bulma-slider.min.js' | relative_url }}"></script>
+  <script src="{{ asset_root | append: '/js/index.js' | relative_url }}"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">{{ paper_title }}</h1>
+            <div class="is-size-5 publication-authors">
+              {% for author in authors %}
+              <span class="author-block">
+                {% if author.url %}
+                <a href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+                {% else %}
+                {{ author.name }}
+                {% endif %}
+                {% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %},{% endunless %}
+              </span>
+              {% endfor %}
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">{{ page.institution }}{% if page.institution and page.venue %}<br>{% endif %}{{ page.venue }}</span>
+              {% if page.equal_contribution_note %}
+              <span class="eql-cntrb"><small><br>{{ page.equal_contribution_note }}</small></span>
+              {% endif %}
+            </div>
+
+            {% if page.links %}
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                {% for link in page.links %}
+                {% if link.url contains '://' %}{% assign link_url = link.url %}{% else %}{% assign link_url = link.url | relative_url %}{% endif %}
+                <span class="link-block">
+                  <a href="{{ link_url }}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    {% if link.icon %}<span class="icon"><i class="{{ link.icon }}"></i></span>{% endif %}
+                    <span>{{ link.label }}</span>
+                  </a>
+                </span>
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if page.teaser_image %}
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img
+          src="{{ page.teaser_image | relative_url }}"
+          alt="{{ page.teaser_alt | default: paper_title }}"
+          style="width: {{ page.teaser_width | default: '100%' }}; display: block; margin: 0 auto;"
+        >
+        {% if page.teaser_caption %}
+        <h2 class="subtitle has-text-centered">{{ page.teaser_caption }}</h2>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% elsif page.teaser_video %}
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="{{ page.teaser_poster | relative_url }}" id="tree" autoplay controls muted loop height="100%">
+          <source src="{{ page.teaser_video | relative_url }}" type="video/mp4">
+        </video>
+        {% if page.teaser_caption %}
+        <h2 class="subtitle has-text-centered">{{ page.teaser_caption }}</h2>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.abstract %}
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>{{ page.abstract }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.figures %}
+  {% if page.figures_layout == 'grid' %}
+  <section class="section{% if page.figures_light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      {% if page.figures_title %}
+      <h2 class="title is-3 has-text-centered">{{ page.figures_title }}</h2>
+      {% endif %}
+      <div class="academic-project-grid academic-project-figure-grid" style="--grid-columns: {{ page.figure_grid_columns | default: 2 }};">
+        {% for figure in page.figures %}
+        <div class="academic-project-grid-item has-text-centered">
+          <img
+            src="{{ figure.image | relative_url }}"
+            alt="{{ figure.alt | default: figure.title }}"
+            style="width: {{ figure.width | default: '100%' }};"
+          >
+          {% if figure.title %}
+          <p class="academic-project-grid-caption">
+            <strong>{{ figure.title }}</strong>{% if figure.caption %}. {{ figure.caption }}{% endif %}
+          </p>
+          {% elsif figure.caption %}
+          <p class="academic-project-grid-caption">{{ figure.caption }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% else %}
+  {% for figure in page.figures %}
+  <section class="section{% if figure.light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img
+            src="{{ figure.image | relative_url }}"
+            alt="{{ figure.alt | default: figure.title }}"
+            style="width: {{ figure.width | default: '100%' }}; max-width: 100%; display: block; margin: 0 auto;"
+          >
+          {% if figure.title %}
+          <h2 class="subtitle has-text-centered">
+            <strong>{{ figure.title }}</strong>{% if figure.caption %}. {{ figure.caption }}{% endif %}
+          </h2>
+          {% elsif figure.caption %}
+          <h2 class="subtitle has-text-centered">{{ figure.caption }}</h2>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  {% endif %}
+  {% elsif page.carousel_images %}
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          {% for item in page.carousel_images %}
+          <div class="item">
+            <img
+              src="{{ item.image | relative_url }}"
+              alt="{{ item.alt | default: item.caption }}"
+              style="width: {{ item.width | default: '100%' }}; max-width: 100%; display: block; margin: 0 auto;"
+            >
+            {% if item.caption %}
+            <h2 class="subtitle has-text-centered">{{ item.caption }}</h2>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.video_sections %}
+  {% for video_section in page.video_sections %}
+  <section class="section academic-project-video-section{% if video_section.light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      {% if video_section.title %}
+      <h2 class="title is-3 has-text-centered">{{ video_section.title }}</h2>
+      {% endif %}
+      {% assign video_grid_columns = video_section.grid_columns | default: 3 %}
+      {% assign videos_per_slide = video_section.per_slide | default: 6 %}
+      <div class="academic-project-video-carousel">
+        {% for item in video_section.videos %}
+        {% assign slide_remainder = forloop.index0 | modulo: videos_per_slide %}
+        {% if slide_remainder == 0 %}
+        <div class="academic-project-video-page{% if forloop.first %} is-active{% endif %}">
+          <div class="academic-project-grid academic-project-video-grid" style="--grid-columns: {{ video_grid_columns }};">
+        {% endif %}
+        <div class="academic-project-grid-item">
+          {% assign autoplay_video = false %}
+          {% if video_section.autoplay or item.autoplay %}
+          {% assign autoplay_video = true %}
+          {% endif %}
+          <video
+            src="{{ item.src | relative_url }}"
+            {% if item.poster %}poster="{{ item.poster | relative_url }}"{% endif %}
+            {% if autoplay_video %}autoplay{% endif %}
+            controls
+            muted
+            loop
+            playsinline
+            preload="{{ item.preload | default: video_section.preload | default: 'metadata' }}"
+          ></video>
+          {% if item.title %}
+          <p class="academic-project-grid-caption has-text-centered">
+            <strong>{{ item.title }}</strong>{% if item.caption %}. {{ item.caption }}{% endif %}
+          </p>
+          {% elsif item.caption %}
+          <p class="academic-project-grid-caption has-text-centered">{{ item.caption }}</p>
+          {% endif %}
+        </div>
+        {% assign close_remainder = forloop.index | modulo: videos_per_slide %}
+        {% if close_remainder == 0 or forloop.last %}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% if video_section.videos.size > videos_per_slide %}
+        <div class="academic-project-video-nav">
+          <button type="button" class="button is-light academic-project-video-prev" aria-label="Previous videos">
+            <span class="icon"><i class="fas fa-chevron-left"></i></span>
+          </button>
+          <span class="academic-project-video-status" aria-live="polite"></span>
+          <button type="button" class="button is-light academic-project-video-next" aria-label="Next videos">
+            <span class="icon"><i class="fas fa-chevron-right"></i></span>
+          </button>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  {% elsif page.video_carousel %}
+  <section class="section academic-project-video-section{% if page.video_grid_light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      {% if page.video_carousel_title %}
+      <h2 class="title is-3 has-text-centered">{{ page.video_carousel_title }}</h2>
+      {% endif %}
+      {% assign video_grid_columns = page.video_grid_columns | default: 3 %}
+      {% assign videos_per_slide = page.video_carousel_per_slide | default: 6 %}
+      <div class="academic-project-video-carousel">
+        {% for item in page.video_carousel %}
+        {% assign slide_remainder = forloop.index0 | modulo: videos_per_slide %}
+        {% if slide_remainder == 0 %}
+        <div class="academic-project-video-page{% if forloop.first %} is-active{% endif %}">
+          <div class="academic-project-grid academic-project-video-grid" style="--grid-columns: {{ video_grid_columns }};">
+        {% endif %}
+        <div class="academic-project-grid-item">
+          {% assign autoplay_video = false %}
+          {% if page.video_autoplay or item.autoplay %}
+          {% assign autoplay_video = true %}
+          {% endif %}
+          <video
+            src="{{ item.src | relative_url }}"
+            {% if item.poster %}poster="{{ item.poster | relative_url }}"{% endif %}
+            {% if autoplay_video %}autoplay{% endif %}
+            controls
+            muted
+            loop
+            playsinline
+            preload="{{ item.preload | default: page.video_preload | default: 'metadata' }}"
+          ></video>
+          {% if item.title %}
+          <p class="academic-project-grid-caption has-text-centered">
+            <strong>{{ item.title }}</strong>{% if item.caption %}. {{ item.caption }}{% endif %}
+          </p>
+          {% elsif item.caption %}
+          <p class="academic-project-grid-caption has-text-centered">{{ item.caption }}</p>
+          {% endif %}
+        </div>
+        {% assign close_remainder = forloop.index | modulo: videos_per_slide %}
+        {% if close_remainder == 0 or forloop.last %}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% if page.video_carousel.size > videos_per_slide %}
+        <div class="academic-project-video-nav">
+          <button type="button" class="button is-light academic-project-video-prev" aria-label="Previous videos">
+            <span class="icon"><i class="fas fa-chevron-left"></i></span>
+          </button>
+          <span class="academic-project-video-status" aria-live="polite"></span>
+          <button type="button" class="button is-light academic-project-video-next" aria-label="Next videos">
+            <span class="icon"><i class="fas fa-chevron-right"></i></span>
+          </button>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.youtube %}
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">{{ page.youtube_title | default: 'Video Presentation' }}</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="{{ page.youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if content != blank %}
+  <section class="section">
+    <div class="container is-max-desktop content">
+      {{ content }}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.bibtex %}
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>{{ page.bibtex | escape }}</code></pre>
+    </div>
+  </section>
+  {% endif %}
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the&nbsp;<a href="https://nerfies.github.io" target="_blank">Nerfies</a>&nbsp;project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer.
+              <br>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
