@@ -188,6 +188,12 @@ ninja.data = [{
             },},{id: "news-i-have-finished-my-b-s-amp-amp-starting-master-degree-course",
           title: 'I have finished my B.S. &amp;amp;amp; starting Master degree course.',
           description: "",
+          section: "News",},{id: "news-i-have-finished-my-m-s-amp-amp-starting-ph-d",
+          title: 'I have finished my M.S. &amp;amp;amp; starting Ph.D.',
+          description: "",
+          section: "News",},{id: "news-one-paper-accepted-to-iros-2026",
+          title: 'One paper accepted to IROS 2026.',
+          description: "",
           section: "News",},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
@@ -223,6 +229,11 @@ ninja.data = [{
           description: "Funny games appeared on &#39;The Genius&#39;",
           section: "Projects",handler: () => {
               window.location.href = "/projects/the_genius/";
+            },},{id: "projects-safety-filter-for-underactuated-robotic-arms-with-velocity-inputs",
+          title: 'Safety Filter for Underactuated Robotic Arms with Velocity Inputs',
+          description: "Task-space CBF-QP safety filtering with explicit Jacobian-range feasibility for velocity-driven underactuated robotic arms.",
+          section: "Projects",handler: () => {
+              window.location.href = "/publications/ua_safetyfilter/";
             },},{
         id: 'social-email',
         title: 'email',
