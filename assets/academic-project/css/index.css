@@ -126,6 +126,10 @@ body {
   border-radius: 8px;
 }
 
+.academic-project-figure-section + .academic-project-figure-section {
+  padding-top: 0;
+}
+
 .academic-project-video-grid video {
   aspect-ratio: 16 / 9;
   object-fit: contain;

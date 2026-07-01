@@ -136,9 +136,63 @@
   </section>
   {% endif %}
 
-  {% if page.figures %}
+  {% if page.figure_sections %}
+  {% for figure_section in page.figure_sections %}
+  {% assign section_layout = figure_section.layout | default: 'grid' %}
+  {% if section_layout == 'grid' %}
+  <section class="section academic-project-figure-section{% if figure_section.light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      {% if figure_section.title %}
+      <h2 class="title is-3 has-text-centered">{{ figure_section.title }}</h2>
+      {% endif %}
+      <div class="academic-project-grid academic-project-figure-grid" style="--grid-columns: {{ figure_section.grid_columns | default: 2 }};">
+        {% for figure in figure_section.figures %}
+        <div class="academic-project-grid-item has-text-centered">
+          <img
+            src="{{ figure.image | relative_url }}"
+            alt="{{ figure.alt | default: figure.title }}"
+            style="width: {{ figure.width | default: '100%' }}; height: {{ figure.height | default: figure_section.image_height | default: 'auto' }}; object-fit: {{ figure.fit | default: figure_section.image_fit | default: 'contain' }};"
+          >
+          {% if figure.title %}
+          <p class="academic-project-grid-caption">
+            <strong>{{ figure.title }}</strong>{% if figure.caption %}. {{ figure.caption }}{% endif %}
+          </p>
+          {% elsif figure.caption %}
+          <p class="academic-project-grid-caption">{{ figure.caption }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% else %}
+  {% for figure in figure_section.figures %}
+  <section class="section academic-project-figure-section{% if figure.light or figure_section.light %} hero is-light{% endif %}">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img
+            src="{{ figure.image | relative_url }}"
+            alt="{{ figure.alt | default: figure.title }}"
+            style="width: {{ figure.width | default: '100%' }}; max-width: 100%; display: block; margin: 0 auto;"
+          >
+          {% if figure.title %}
+          <h2 class="subtitle has-text-centered">
+            <strong>{{ figure.title }}</strong>{% if figure.caption %}. {{ figure.caption }}{% endif %}
+          </h2>
+          {% elsif figure.caption %}
+          <h2 class="subtitle has-text-centered">{{ figure.caption }}</h2>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+  {% elsif page.figures %}
   {% if page.figures_layout == 'grid' %}
-  <section class="section{% if page.figures_light %} hero is-light{% endif %}">
+  <section class="section academic-project-figure-section{% if page.figures_light %} hero is-light{% endif %}">
     <div class="container is-max-desktop">
       {% if page.figures_title %}
       <h2 class="title is-3 has-text-centered">{{ page.figures_title }}</h2>
@@ -165,7 +219,7 @@
   </section>
   {% else %}
   {% for figure in page.figures %}
-  <section class="section{% if figure.light %} hero is-light{% endif %}">
+  <section class="section academic-project-figure-section{% if figure.light %} hero is-light{% endif %}">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
