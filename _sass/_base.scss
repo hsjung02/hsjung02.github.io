@@ -730,10 +730,24 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        display: block;
+
+        &[src*="/ua_safetyfilter/"] {
+          background-color: #fff;
+          border-radius: 12px !important;
+        }
       }
 
       .abbr {
         margin-bottom: 0.5rem;
+
+        figure {
+          margin: 0;
+        }
+
+        @media (min-width: 576px) {
+          margin-bottom: 0;
+        }
 
         abbr {
           display: inline-block;
@@ -757,7 +771,20 @@ footer.sticky-bottom {
       }
 
       .title {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        margin-bottom: 0.25rem;
         font-weight: bolder;
+
+        a {
+          color: var(--global-text-color);
+
+          &:hover,
+          &:focus-visible {
+            color: var(--global-theme-color);
+            text-decoration: underline;
+          }
+        }
       }
 
       .author {

@@ -1,4 +1,4 @@
-FROM ruby:slim
+FROM ruby:3.3.5-slim
 
 # uncomment these if you are having this issue with the build:
 # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
@@ -60,8 +60,8 @@ ADD Gemfile /srv/jekyll
 # set the working directory
 WORKDIR /srv/jekyll
 
-# install jekyll and dependencies
-RUN gem install --no-document jekyll bundler
+# install bundler and dependencies
+RUN gem install --no-document bundler -v 2.6.6
 RUN bundle install --no-cache
 
 EXPOSE 8080

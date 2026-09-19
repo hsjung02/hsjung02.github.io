@@ -5,7 +5,7 @@
     "image": "",
     "email": "hsjung02[at]postect[dot]ac[dot]kr",
     "phone": "",
-    "url": "https://hsjung02.github.io",
+    "url": "",
     "summary": "Ph.D. student in robotics",
     "location": {
       "address": "39 Jigok-ro, Nam-gu",
@@ -56,49 +56,20 @@
       "score": "10"
     }
   ],
-  "skills": [
+  "publications": [
     {
-      "name": "Hardware",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "3D Printer",
-        "Lathe/Milling/CNC",
-        "Embedded(ST, Arduino)"
-      ]
+      "name": "Learning Spatially Ambiguous Trajectories from Demonstrations via Phase-Modulated Dynamical Systems",
+      "publisher": "IEEE Robotics and Automation Letters (RA-L)",
+      "releaseDate": "2026",
+      "url": "/publications/pmds/",
+      "summary": "<strong><u>H. Jung</u></strong>, J. Kim, and K. Kim"
     },
     {
-      "name": "Software",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python(PyTorch/PyBullet)",
-        "MATLAB",
-        "C/C++"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Korean",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Automation",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Robotics",
-        "Control theory",
-        "Artificial intelligence"
-      ]
+      "name": "Safety Filter for Underactuated Robotic Arms with Velocity Inputs",
+      "publisher": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "releaseDate": "2026",
+      "url": "/publications/ua_safetyfilter/",
+      "summary": "<strong><u>H. Jung</u></strong> and K. Kim"
     }
   ]
 }

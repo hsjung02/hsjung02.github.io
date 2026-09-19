@@ -11,3 +11,11 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# LaTeX build files (keep the CV source and PDF)
+assets/pdf/cv/*.aux
+assets/pdf/cv/*.fdb_latexmk
+assets/pdf/cv/*.fls
+assets/pdf/cv/*.log
+assets/pdf/cv/*.out
+assets/pdf/cv/*.synctex.gz

@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an upcoming Ph.D. student at POSTECH MechE.
+I am a Ph.D. student at POSTECH MechE.
 Previously, I did my master's degree at POSTECH, where I was fortunate to be advised by [prof. Keehoon Kim](https://scholar.google.com/citations?user=P8CKlYQAAAAJ&hl=ko&oi=ao).
 Prior to that, I did my undergraduate studies at POSTECH, majoring in Mechanical Engineering and Electrical Engineering.
 
@@ -34,11 +34,11 @@ As a robotics researcher, my goal is to put "everything under control".
 That means, to formulate the robotic tasks under control theoretical framework for reliable and performant task execution.
 
 My current research interests include the followings.
-- Dynamics learning
-- Embedded MPC solution
+- Dynamical-Systems-based Learning from Demonstrations
+- Learning Contact-Rich tasks from Demonstrations
 
 Previously I worked on the following topics.
 - Deep RL-based combinatorial optimization
 - Stability analysis of discrete-time PID controllers
 
-I enjoy playing [chess](https://www.chess.com/member/7seo7) and [League of Legends](https://www.fow.lol/find/kr/%EB%8D%94%EB%B8%94%EC%B4%88%EC%BD%94%EC%B9%A9-KR1)
+I enjoy playing [chess](https://www.chess.com/member/7seo7).
