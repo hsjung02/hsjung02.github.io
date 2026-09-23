@@ -33,12 +33,15 @@ Prior to that, I did my undergraduate studies at POSTECH, majoring in Mechanical
 As a robotics researcher, my goal is to put "everything under control".
 That means, to formulate the robotic tasks under control theoretical framework for reliable and performant task execution.
 
-My current research interests include the followings.
+My current research interests include the followings,
 - Dynamical-Systems-based Learning from Demonstrations
 - Learning Contact-Rich tasks from Demonstrations
+but not limited to.
 
 Previously I worked on the following topics.
 - Deep RL-based combinatorial optimization
 - Stability analysis of discrete-time PID controllers
 
-I enjoy playing [chess](https://www.chess.com/member/7seo7).
+For those of you who are interested in robot control and its applications, I would be happy to connect.
+
+Besides, I enjoy playing [chess](https://www.chess.com/member/7seo7).
