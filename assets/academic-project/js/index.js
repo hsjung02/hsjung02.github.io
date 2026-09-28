@@ -2,6 +2,14 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 
 $(document).ready(function() {
+    // Keep animations still until played when reduced motion is requested.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        $('.academic-project-block video[autoplay]').each(function() {
+            this.removeAttribute('autoplay');
+            this.pause();
+        });
+    }
+
     // Check for click events on the navbar burger icon
 
     var options = {

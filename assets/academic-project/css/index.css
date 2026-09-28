@@ -110,6 +110,47 @@ body {
 .publication-body img {
 }
 
+.academic-project-block + .academic-project-block {
+  margin-top: 1.5rem;
+}
+
+.academic-project-block .content a {
+  /* Override Bulma's inherited link color in light hero sections. */
+  color: #1769aa !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.academic-project-block .content a:hover,
+.academic-project-block .content a:focus-visible {
+  color: #124b7a !important;
+  text-decoration-thickness: 2px;
+}
+
+.academic-project-block .content a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.academic-project-table {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.academic-project-block .content table {
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.academic-project-block mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
 .academic-project-grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-columns, 2), minmax(0, 1fr));

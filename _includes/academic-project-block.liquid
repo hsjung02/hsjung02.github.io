@@ -1,0 +1,58 @@
+{% assign content_block = include.block %}
+<div class="academic-project-block">
+  {% if content_block.content != blank %}
+  <div class="content has-text-justified">
+    {{ content_block.content | markdownify | replace: '<table>', '<div class="academic-project-table"><table>' | replace: '</table>', '</table></div>' }}
+  </div>
+  {% endif %}
+  {% if content_block.figures != blank %}
+  <div class="academic-project-grid" style="--grid-columns: {{ content_block.grid_columns | default: include.section.grid_columns | default: 2 }};">
+    {% for figure in content_block.figures %}
+    <div class="academic-project-grid-item has-text-centered">
+      <img
+        src="{{ figure.image | relative_url }}"
+        alt="{{ figure.alt | default: figure.caption | default: include.section.title | escape }}"
+        style="width: {{ figure.width | default: '100%' }}; aspect-ratio: {{ content_block.image_aspect_ratio | default: include.section.image_aspect_ratio | default: '3 / 2' }}; object-fit: contain;"
+        loading="lazy"
+      >
+      {% if figure.caption %}
+      <p class="academic-project-grid-caption">{{ figure.caption | escape }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if content_block.videos != blank %}
+  <div class="academic-project-grid academic-project-video-grid" style="--grid-columns: {{ content_block.grid_columns | default: include.section.grid_columns | default: 2 }};">
+    {% for video in content_block.videos %}
+    <figure class="academic-project-grid-item has-text-centered">
+      <video
+        controls
+        muted
+        playsinline
+        preload="metadata"
+        {% if video.autoplay %}autoplay{% endif %}
+        {% if video.loop %}loop{% endif %}
+        {% if video.poster %}poster="{{ video.poster | relative_url }}"{% endif %}
+        aria-label="{{ video.alt | default: video.caption | default: video.title | escape }}"
+        style="width: {{ video.width | default: '100%' }};"
+      >
+        <source src="{{ video.video | relative_url }}" type="video/mp4">
+        <a href="{{ video.video | relative_url }}">Download video</a>
+      </video>
+      {% if video.title or video.caption %}
+      <figcaption class="academic-project-grid-caption">
+        {% if video.title %}<strong>{{ video.title | escape }}</strong>{% if video.caption %}<br>{% endif %}{% endif %}
+        {% if video.caption %}{{ video.caption | escape }}{% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if content_block.content_after != blank %}
+  <div class="content has-text-justified" style="margin-top: 1.5rem;">
+    {{ content_block.content_after | markdownify | replace: '<table>', '<div class="academic-project-table"><table>' | replace: '</table>', '</table></div>' }}
+  </div>
+  {% endif %}
+</div>
