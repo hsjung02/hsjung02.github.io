@@ -36,6 +36,7 @@ That means, to formulate the robotic tasks under control theoretical framework f
 My current research interests include the followings,
 - Dynamical-Systems-based Learning from Demonstrations
 - Learning Contact-Rich tasks from Demonstrations
+  
 but not limited to.
 
 Previously I worked on the following topics.
