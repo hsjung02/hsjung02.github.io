@@ -126,6 +126,7 @@ video_sections:
   - title: Safety
     grid_columns: 2
     per_slide: 2
+    autoplay: true
     videos:
       - src: /assets/academic-project/videos/ua_safetyfilter/safety_unsafe.mp4
         title: Unsafe
@@ -134,6 +135,7 @@ video_sections:
   - title: Tracking Performance
     grid_columns: 2
     per_slide: 2
+    autoplay: true
     videos:
       - src: /assets/academic-project/videos/ua_safetyfilter/tracking_poor.mp4
         title: Poor
