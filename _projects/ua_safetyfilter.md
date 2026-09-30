@@ -139,6 +139,37 @@ video_sections:
         title: Poor
       - src: /assets/academic-project/videos/ua_safetyfilter/tracking_good.mp4
         title: Good (proposed)
+  - title: Additional Demonstrations
+    id: additional-demonstrations
+    grid_columns: 3
+    per_slide: 6
+    aspect_ratio: 4 / 3
+    autoplay: true
+    videos:
+      - src: /assets/academic-project/videos/ua_safetyfilter/general-motion-1.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/general-motion-1.jpg
+        title: General motion constraint
+        caption: Example 1
+      - src: /assets/academic-project/videos/ua_safetyfilter/obstacle-avoidance-1.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/obstacle-avoidance-1.jpg
+        title: Obstacle avoidance
+        caption: Example 1
+      - src: /assets/academic-project/videos/ua_safetyfilter/joint-velocity-1.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/joint-velocity-1.jpg
+        title: Joint velocity limit
+        caption: Example 1
+      - src: /assets/academic-project/videos/ua_safetyfilter/general-motion-2.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/general-motion-2.jpg
+        title: General motion constraint
+        caption: Example 2
+      - src: /assets/academic-project/videos/ua_safetyfilter/obstacle-avoidance-2.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/obstacle-avoidance-2.jpg
+        title: Obstacle avoidance
+        caption: Example 2
+      - src: /assets/academic-project/videos/ua_safetyfilter/joint-velocity-2.mp4
+        poster: /assets/academic-project/images/ua_safetyfilter/joint-velocity-2.jpg
+        title: Joint velocity limit
+        caption: Example 2
 
 # poster_title: Poster
 # poster_pdf: /assets/academic-project/pdfs/ua_safetyfilter/PMDS-CBF.pdf

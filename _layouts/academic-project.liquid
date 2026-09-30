@@ -297,7 +297,7 @@
 
   {% if page.video_sections %}
   {% for video_section in page.video_sections %}
-  <section class="section academic-project-video-section{% if video_section.light %} hero is-light{% endif %}">
+  <section {% if video_section.id %}id="{{ video_section.id | escape }}"{% endif %} class="section academic-project-video-section{% if video_section.light %} hero is-light{% endif %}">
     <div class="container is-max-desktop">
       {% if video_section.title %}
       <h2 class="title is-3 has-text-centered">{{ video_section.title }}</h2>
@@ -319,6 +319,8 @@
           <video
             src="{{ item.src | relative_url }}"
             {% if item.poster %}poster="{{ item.poster | relative_url }}"{% endif %}
+            {% if video_section.aspect_ratio %}style="aspect-ratio: {{ video_section.aspect_ratio | escape }};"{% endif %}
+            {% if item.title %}aria-label="{{ item.title | escape }}{% if item.caption %}: {{ item.caption | escape }}{% endif %}"{% endif %}
             {% if autoplay_video %}autoplay{% endif %}
             controls
             muted
