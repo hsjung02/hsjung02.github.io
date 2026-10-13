@@ -1,6 +1,7 @@
 ---
 layout: about
 title: about
+seo_title: Hyunseo Jung | Robotics Researcher at POSTECH
 permalink: /
 subtitle: 
 
