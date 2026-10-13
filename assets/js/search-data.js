@@ -29,7 +29,7 @@ const ninja = document.querySelector('ninja-keys');
       },
     },{
       id: "project-/publications/pmds/",
-      title: "Learning Spatially Ambiguous Trajectories from Demonstrations via Phase-Modulated Dynamical Systems",
+      title: "Learning Spatially Ambiguous Trajectories From Demonstrations via Phase-Modulated Dynamical Systems",
       description: "Learning spatially ambiguous trajectories from demonstrations using phase-modulated dynamical systems.",
       section: "Publications",
       searchPriority: 1,
