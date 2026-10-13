@@ -1,0 +1,67 @@
+{% assign publication = page.publication %}
+{% assign paper_url = page.url | replace: 'index.html', '' | absolute_url %}
+{% if publication.year %}
+  <meta name="citation_title" content="{{ paper_title | escape }}">
+  {% for author in authors %}
+    <meta name="citation_author" content="{{ author.name | escape }}">
+  {% endfor %}
+  <meta name="citation_publication_date" content="{{ publication.year | escape }}">
+  <meta name="citation_language" content="{{ site.lang | default: 'en' | escape }}">
+  <meta name="citation_abstract_html_url" content="{{ paper_url | escape }}">
+  {% if publication.journal %}
+    <meta name="citation_journal_title" content="{{ publication.journal | escape }}">
+  {% endif %}
+  {% if publication.conference %}
+    <meta name="citation_conference_title" content="{{ publication.conference | escape }}">
+  {% endif %}
+  {% if publication.volume %}<meta name="citation_volume" content="{{ publication.volume | escape }}">{% endif %}
+  {% if publication.issue %}<meta name="citation_issue" content="{{ publication.issue | escape }}">{% endif %}
+  {% if publication.firstpage %}<meta name="citation_firstpage" content="{{ publication.firstpage | escape }}">{% endif %}
+  {% if publication.lastpage %}<meta name="citation_lastpage" content="{{ publication.lastpage | escape }}">{% endif %}
+  {% if publication.doi %}<meta name="citation_doi" content="{{ publication.doi | escape }}">{% endif %}
+  {% if publication.pdf_url %}
+    <meta name="citation_pdf_url" content="{{ publication.pdf_url | absolute_url | escape }}">
+  {% endif %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "@id": {{ paper_url | append: '#article' | jsonify }},
+      "url": {{ paper_url | jsonify }},
+      "mainEntityOfPage": {{ paper_url | jsonify }},
+      "headline": {{ paper_title | jsonify }},
+      "name": {{ paper_title | jsonify }},
+      "description": {{ paper_description | jsonify }},
+      "abstract": {{ page.abstract | strip_html | normalize_whitespace | jsonify }},
+      "inLanguage": {{ site.lang | default: 'en' | jsonify }},
+      "author": [
+        {% for author in authors %}
+          {
+            "@type": "Person",
+            "name": {{ author.name | jsonify }}
+            {% if author.url %}, "url": {{ author.url | jsonify }}{% endif %}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+      {% if page.img %}, "image": {{ page.img | absolute_url | jsonify }}{% endif %}
+      {% if publication.journal %},
+        "isPartOf": { "@type": "Periodical", "name": {{ publication.journal | jsonify }} }
+      {% elsif publication.conference %},
+        "isPartOf": { "@type": "CreativeWork", "name": {{ publication.conference | jsonify }} }
+      {% endif %}
+      {% if publication.doi %},
+        "sameAs": {{ publication.doi | prepend: 'https://doi.org/' | jsonify }},
+        "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": {{ publication.doi | jsonify }} }
+      {% endif %}
+      {% if publication.firstpage %}, "pageStart": {{ publication.firstpage | jsonify }}{% endif %}
+      {% if publication.lastpage %}, "pageEnd": {{ publication.lastpage | jsonify }}{% endif %}
+      {% if publication.pdf_url %},
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": {{ publication.pdf_url | absolute_url | jsonify }},
+          "encodingFormat": "application/pdf"
+        }
+      {% endif %}
+    }
+  </script>
+{% endif %}

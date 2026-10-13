@@ -12,6 +12,10 @@ paper_title: Safety Filter for Underactuated Robotic Arms with Velocity Inputs
 paper_description: Task-space CBF-QP safety filtering with explicit Jacobian-range feasibility for velocity-driven underactuated robotic arms.
 institution: Pohang University of Science and Technology (POSTECH)
 venue: IROS 2026
+publication:
+  year: 2026
+  conference: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  pdf: /assets/academic-project/pdfs/ua_safetyfilter/PMDS-CBF.pdf
 # equal_contribution_note: "* Indicates equal contribution"
 
 authors:
@@ -24,7 +28,7 @@ authors:
 
 links:
   - label: Paper
-    url: /assets/academic-project/pdfs/ua_safetyfilter/PMDS-CBF.pdf
+    url: /publications/ua_safetyfilter/paper.pdf
     icon: fas fa-file-pdf
   - label: Video
     url: /assets/academic-project/videos/ua_safetyfilter/IROS2026_video_with_affiliation.mp4
@@ -176,11 +180,11 @@ video_sections:
 # poster_title: Poster
 # poster_pdf: /assets/academic-project/pdfs/ua_safetyfilter/PMDS-CBF.pdf
 
-# bibtex: |
-#   @inproceedings{jung2026safetyfilter,
-#     title={Safety Filter for Underactuated Robotic Arms with Velocity Inputs},
-#     author={Jung, Hyunseo and Kim, Keehoon},
-#     booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-#     year={2026}
-#   }
+bibtex: |
+  @inproceedings{jung2026safetyfilter,
+    title={Safety Filter for Underactuated Robotic Arms with Velocity Inputs},
+    author={Jung, Hyunseo and Kim, Keehoon},
+    booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    year={2026}
+  }
 ---

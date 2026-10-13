@@ -1,7 +1,7 @@
 ---
 layout: academic-project
 permalink: /publications/pmds/
-title: Learning Spatially Ambiguous Trajectories from Demonstrations via Phase-Modulated Dynamical Systems
+title: Learning Spatially Ambiguous Trajectories From Demonstrations via Phase-Modulated Dynamical Systems
 description: Learning spatially ambiguous trajectories from demonstrations using phase-modulated dynamical systems.
 img: assets/academic-project/images/pmds/pmds_thumbnail.png
 importance: 98
@@ -9,10 +9,18 @@ category: publication
 giscus_comments: false
 math: true
 
-paper_title: Learning Spatially Ambiguous Trajectories from Demonstrations via Phase-Modulated Dynamical Systems
+paper_title: Learning Spatially Ambiguous Trajectories From Demonstrations via Phase-Modulated Dynamical Systems
 paper_description: Learning spatially ambiguous trajectories from demonstrations using phase-modulated dynamical systems.
 institution: Pohang University of Science and Technology (POSTECH)
 venue: IEEE Robotics and Automation Letters (RA-L), 2026
+publication:
+  year: 2026
+  journal: IEEE Robotics and Automation Letters
+  volume: 11
+  issue: 11
+  firstpage: 12663
+  lastpage: 12670
+  doi: 10.1109/LRA.2026.3732892
 
 authors:
   - name: Hyunseo Jung
