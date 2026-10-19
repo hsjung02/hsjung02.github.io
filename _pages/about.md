@@ -47,3 +47,6 @@ Previously I worked on the following topics.
 For those of you who are interested in robot control and its applications, I would be happy to connect.
 
 Besides, I enjoy playing [chess](https://www.chess.com/member/7seo7).
+
+- *There is nothing as practical as a good theory.* - K. Lewin
+- *An expert is a person who has made all the mistakes that can be made in a very narrow field.* - N. Bohr
